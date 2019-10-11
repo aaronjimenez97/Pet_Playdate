@@ -1,0 +1,29 @@
+{
+	"type": "UserCollection",
+	"properties": {
+		"fname": {
+			"name": "fname",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "fname",
+			"order": 0
+		},
+		"lname": {
+			"name": "lname",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "lname",
+			"order": 1
+		},
+		"email": {
+			"name": "email",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "email",
+			"order": 2
+		}
+	}
+}
