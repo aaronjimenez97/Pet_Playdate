@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name= "viewport" content="width=sevice-width, initial-scale=1">
-    <title>Play Date!</title>
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="stylesheets/styles.css">
-  </head>
-  <body>
-    <header class="main-header">
-      <h1 class="mainh-text">Play Date</h1>
-    </header>
-  </body>
-  <script scr = "stylesheets/styles.css">
-
+<html>
+<head>
+  <title>Main</title>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1></h1>
+    <button class="btn" id="logout-btn">Logout</button>
+  </div>
+  <script type="text/javascript" src="/js/lib/jquery.js"></script>
+  <script type="text/javascript" src="/dpd.js"></script>
+  <script type="text/javascript">
+    dpd.users.me(function(user) {
+      if (user) {
+        $('h1').text("Welcome, " + user.username + "!");
+      } else {
+        location.href = "/";
+      }
+    });
+    $('#logout-btn').click(function() {
+      dpd.users.logout(function(res, err) {
+        location.href = "/index.html";
+      });
+    });
   </script>
+</body>
 </html>
+
+<!-- <html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name= "viewport" content="width=sevice-width, initial-scale=1">
+  <title>Play Date!</title>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="mainh-text">Play Date</h1>
+  </header>
+</body>
+<script scr = "stylesheets/styles.css">
+
+</script>
+</html> -->
