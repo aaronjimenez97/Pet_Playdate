@@ -8,6 +8,7 @@
   <div class="container">
     <h1></h1>
     <button class="btn" id="logout-btn">Logout</button>
+    <button class ="btn" id="reg-btn">Post</button>
   </div>
   <script type="text/javascript" src="/scripts/jquery.js"></script>
   <script type="text/javascript" src="/dpd.js"></script>
@@ -24,6 +25,40 @@
         location.href = "/index.html";
       });
     });
+
+    $('#reg-btn').click(function() {
+        location.href = "/formpost.html";
+    });
+
+    
   </script>
+
+<div id ="container">
+<input class="form-control" id="myInput" type="text" placeholder="Search..">
+<div id="myDIV">
+
+<!-- <div id = "posts">
+</div> -->
+
+</div>
+</div>
+
+
 </body>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<script src="scripts/main.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </html>
