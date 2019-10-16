@@ -8,6 +8,7 @@
   <div class="container">
     <h1></h1>
     <button class="btn" id="logout-btn">Logout</button>
+    <button class ="btn" id="reg-btn">Post</button>
   </div>
   <script type="text/javascript" src="/scripts/jquery.js"></script>
   <script type="text/javascript" src="/dpd.js"></script>
@@ -24,6 +25,12 @@
         location.href = "/index.html";
       });
     });
+
+    $('#reg-btn').click(function() {
+        location.href = "/formpost.html";
+    });
+
+    
   </script>
 
 <div id ="container">
