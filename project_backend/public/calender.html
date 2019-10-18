@@ -9,11 +9,16 @@
       margin: auto;
     }
     </style>
+
+
 </head>
 <body>
-<!-- <button class="btn" id="main-btn">Main</button>
-<button class="btn" id="reg-btn">Post</button>
-<button class="btn" id="logout-btn">Logout</button> -->
+
+  <button class="btn" id="main-btn">Main</button>
+  <button class="btn" id="reg-btn">Post</button>
+  <button class="btn" id="logout-btn">Logout</button>
+  <button class="btn" id="chat-btn">Chat</button>
+
 
   <div id = "myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -145,28 +150,30 @@
   </div>
 
 
-  <!-- <script text = "text/javascript">
-    $('#main-btn').click(function() {
 
-        location.href = "/main.html";
-
-    });
-
-    $('#logout-btn').click(function() {
-      dpd.users.logout(function(res, err) {
-        location.href = "/index.html";
-      });
-    });
-
-    $('#reg-btn').click(function() {
-        location.href = "/formpost.html";
-    });
-
-
-
-  </script> -->
 </body>
+<script text = "text/javascript">
+  $('#main-btn').click(function() {
 
+      location.href = "/main.html";
+
+  });
+
+  $('#logout-btn').click(function() {
+    dpd.users.logout(function(res, err) {
+      location.href = "/index.html";
+    });
+  });
+
+  $('#reg-btn').click(function() {
+      location.href = "/formpost.html";
+  });
+
+  $('#chat-btn').click(function() {
+      location.href = "/chat.html";
+  });
+
+</script>
 <script type="text/javascript" src="/dpd.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="calender.js"></script>
