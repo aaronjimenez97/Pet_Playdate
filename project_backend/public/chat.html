@@ -15,6 +15,9 @@
     </style>
 </head>
 <body>
+  <button class="btn" id="main-btn">Main</button>
+  <button class="btn" id="reg-btn">Post</button>
+  <button class="btn" id="logout-btn">Logout</button>
     <div class="container">
         <div id="comments">
         </div>
@@ -36,5 +39,23 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="/dpd.js"></script>
     <script type="text/javascript" src="/scripts/chat.js"></script>
+    <script text = "text/javascript">
+      $('#main-btn').click(function() {
+
+          location.href = "/main.html";
+
+      });
+
+      $('#logout-btn').click(function() {
+        dpd.users.logout(function(res, err) {
+          location.href = "/index.html";
+        });
+      });
+
+      $('#reg-btn').click(function() {
+          location.href = "/formpost.html";
+      });
+
+    </script>
 </body>
 </html>
