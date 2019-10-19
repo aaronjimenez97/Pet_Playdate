@@ -9,16 +9,18 @@
       margin: auto;
     }
     </style>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
 
   <button class="btn" id="main-btn">Main</button>
   <button class="btn" id="reg-btn">Post</button>
-  <button class="btn" id="logout-btn">Logout</button>
   <button class="btn" id="chat-btn">Chat</button>
-
+<button class="btn" id="logout-btn">Logout</button>
 
   <div id = "myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -150,35 +152,36 @@
   </div>
 
 
+  <script text = "text/javascript">
 
-</body>
-<script text = "text/javascript">
-  $('#main-btn').click(function() {
+    $('#main-btn').click(function() {
 
-      location.href = "/main.html";
+        location.href = "/main.html";
 
-  });
-
-  $('#logout-btn').click(function() {
-    dpd.users.logout(function(res, err) {
-      location.href = "/index.html";
     });
-  });
 
-  $('#reg-btn').click(function() {
-      location.href = "/formpost.html";
-  });
+    $('#logout-btn').click(function() {
+      dpd.users.logout(function(res, err) {
+        location.href = "/logout.html";
+      });
+    });
 
-  $('#chat-btn').click(function() {
-      location.href = "/chat.html";
-  });
+    $('#reg-btn').click(function() {
+        location.href = "/formpost.html";
+    });
 
-</script>
+    $('#chat-btn').click(function() {
+        location.href = "/chat.html";
+    });
+
+
+
+  </script>
+</body>
+
 <script type="text/javascript" src="/dpd.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="calender.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts/calender.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script src="scripts/calender.js" charset="utf-8"></script>
+<script type="text/javascript" src="/scripts/jquery.js"></script>
+
 </html>
