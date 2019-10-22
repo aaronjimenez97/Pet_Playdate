@@ -1,0 +1,36 @@
+
+h1{
+  background-color: #807F3C;
+  border-bottom: black 10px;
+  border-style: solid;
+  color: white;
+  text-align: center;
+  /* text-shadow: 3px 2px navy; */
+}
+.container{
+  background-color: inherit;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 100px;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+html, body{
+  height: 100%;
+}
+body{
+  /* background-color:  #D7E0E7; */
+  background-color: #B36B39;
+}
+
+/*
+    Color Codes in Hex
+        Brown-Orange:  #B36B39;
+        Light Grey: #D7E0E7
+        Green: #807F3C
+        BlueGray: #96ABB0
+        DarkGrey:  #46433E
+ */
