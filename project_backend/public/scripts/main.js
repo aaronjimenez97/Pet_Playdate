@@ -40,7 +40,7 @@ var $el = $('<p>');
               .append('Pet Type: ' + post.ptype+ ' </p>')
               .append('Monday: ' + post.monday + ' </p>')
               .append('Tuesday: ' + post.tuesday+ ' </p>')
-              .append('Wedndesday: ' + post.wednesday+ ' </p>')
+              .append('Wednesday: ' + post.wednesday+ ' </p>')
               .append('Thursday: ' + post.thursday + ' </p>')
               .append('Friday: ' + post.friday  + ' </p>')
               .append('Saturday: ' + post.saturday + ' </p>')

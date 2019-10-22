@@ -3,6 +3,10 @@
 <head>
   <title>Main</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 .card {
   /* Add shadows to create the "card" effect */
@@ -10,25 +14,44 @@
   transition: 0.3s;
 
 max-width: 250px;
-max-height: 600px;
+max-height: 500px;
 margin: auto;
 text-align: center;
 font-family: arial;
 }
 
 ul {
-  columns: 4;
+  columns: 3;
  padding: 20px;
 }
 
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 </style>
 </head>
 <body>
   <div class="container">
     <h1></h1>
-    <button class="btn" id="logout-btn">Logout</button>
-    <button class ="btn" id="reg-btn">Post</button>
-    <button class="btn" id="chat-btn">Chat</button>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+
+      <button class ="btn" id="reg-btn">Post</button>
+      <button class="btn" id="chat-btn">Chat</button>
+      <button class="btn" id="logout-btn">Logout</button>
+    </nav>
+
+
   </div>
   <script type="text/javascript" src="/scripts/jquery.js"></script>
   <script type="text/javascript" src="/dpd.js"></script>
@@ -54,9 +77,9 @@ ul {
     });
 
   </script>
-
+<div></div>
 <div id ="container">
-<input class="form-control" id="myInput" type="text" placeholder="Search..">
+<!-- <input class="form-control" id="myInput" type="text" placeholder="Search.."> -->
 
 
 
