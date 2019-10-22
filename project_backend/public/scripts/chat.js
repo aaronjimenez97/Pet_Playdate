@@ -30,7 +30,7 @@ addname();
           if (error) return showError(error);
 
           addComment(comment);
-          $('#name').val('');
+          //$('#name').val('');
           $('#comment').val('');
   });
 
