@@ -1,29 +1,32 @@
-@font-face{
+@font-face {
   font-family: 'lakeshore';
   font-style: normal;
   font-weight: normal;
   src: url('fonts/LAKESHOR-webfont.eot');
   src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/LAKESHOR-webfont.woff') format('woff'),
-        url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
-        url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+    url('fonts/LAKESHOR-webfont.woff') format('woff'),
+    url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+    url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
 }
-@font-face{
+
+@font-face {
   font-family: 'airstreamregular';
   font-style: normal;
   font-weight: lighter;
   src: url('fonts/Airstream-webfont.eot');
   src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Airstream-webfont.woff') format('woff'),
-        url('fonts/Airstream-webfont.ttf') format('truetype'),
-        url('fonts/Airstream-webfont.svg#lakeshore') format('svg');
+    url('fonts/Airstream-webfont.woff') format('woff'),
+    url('fonts/Airstream-webfont.ttf') format('truetype'),
+    url('fonts/Airstream-webfont.svg#lakeshore') format('svg');
 }
-html, body{
-  height:100%;
+
+html, body {
+  height: 100%;
 }
-body{
+
+body {
   background-attachment: fixed;
-  background-color:  #D7E0E7;
+  background-color: #D7E0E7;
   background-image: url("/animals/playtime.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -34,16 +37,15 @@ body{
   flex: 0 1 auto;
   height: 100%;
 } */
-.container{
+.container {
   /* background-color: #B36B39; */
-  background:#D7E0E7;
+  background: #D7E0E7;
   margin-top: 1.5em;
   text-align: center;
 }
 
-@media all and (min-width: 768px){
-  html, body{
-  height:100%;
-}
-
+@media all and (min-width: 768px) {
+  html, body {
+    height: 100%;
+  }
 }

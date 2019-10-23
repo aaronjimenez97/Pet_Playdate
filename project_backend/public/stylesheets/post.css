@@ -1,10 +1,11 @@
-h1{
+h1 {
   background: #807F3C;
   color: white;
 }
-body{
+
+body {
   background-attachment: fixed;
-  background-color:  #D7E0E7;
+  background-color: #D7E0E7;
   background-image: url("/animals/postpic.jpg");
   background-position: center top;
   background-repeat: no-repeat;

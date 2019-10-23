@@ -1,14 +1,16 @@
-html, body{
-  height:100%;
+html, body {
+  height: 100%;
 }
-body{
-  background-color:  #D7E0E7;
+
+body {
+  background-color: #D7E0E7;
   /* background-color: #B36B39; */
   display: flex;
   flex-direction: column;
   font-size: 10px;
 }
-.carousel-container{
+
+.carousel-container {
   display: block;
   margin-left: 20px;
   margin-right: 20px;

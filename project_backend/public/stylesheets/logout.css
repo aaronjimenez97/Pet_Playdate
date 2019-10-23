@@ -6,26 +6,28 @@
         BlueGray: #96ABB0
         DarkGrey:  #46433E
  */
-
-body{
-    background-color:  #D7E0E7;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5em;
+body {
+  background-color: #D7E0E7;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
 }
-.item{
+
+.item {
   align-items: center;
   background-color: #B36B39;
   margin: 50px;
   padding: 10px;
 }
-.center{
+
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-p{
+
+p {
   color: white;
   text-align: center;
 }

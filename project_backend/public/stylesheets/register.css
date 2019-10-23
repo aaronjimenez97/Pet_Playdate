@@ -1,5 +1,4 @@
-
-h1{
+h1 {
   background-color: #807F3C;
   border-bottom: black 1px;
   border-style: solid;
@@ -8,33 +7,38 @@ h1{
   text-align: center;
   /* text-shadow: 3px 2px navy; */
 }
-.container{
+
+.container {
   /* background-color:#B36B39; */
   background-color: #D7E0E7;
   border-radius: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-left: auto;
   margin-right: 100px;
   padding: 25px 25px 25px 50px;
   /* width: 500px; */
 }
-.register-fields{
-    flex-wrap: wrap;
+
+.register-fields {
+  flex-wrap: wrap;
 }
-ul li{
+
+ul li {
   list-style: none;
   margin-bottom: 1em;
   margin-top: 1em;
 }
-.register-fields{
+
+.register-fields {
   opacity: 1;
 }
 
-html, body{
+html, body {
   height: 100%;
   width: auto;
 }
-body{
+
+body {
   background-color: #B36B39;
   background-image: url("/animals/register.jpg");
   background-repeat: repeat;
