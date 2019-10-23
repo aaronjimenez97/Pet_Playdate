@@ -22,15 +22,20 @@ html, body{
   height:100%;
 }
 body{
+  background-attachment: fixed;
   background-color:  #D7E0E7;
-  /* background-color: #B36B39; */
+  background-image: url("/animals/playtime.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
   font-size: 1.5em;
 }
-ul{
+
+/* ul{
   flex: 0 1 auto;
   height: 100%;
-}
+} */
 .container{
+  /* background-color: #B36B39; */
   background:#D7E0E7;
   margin-top: 1.5em;
   text-align: center;
